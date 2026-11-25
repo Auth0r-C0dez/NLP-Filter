@@ -4,6 +4,10 @@ This project creates labeled text examples for a model that classifies a prompt 
 
 Read [PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md) for the full, plain-language architecture and walkthrough.
 
+The initial classifier baseline is TF-IDF plus Logistic Regression. Setup, training, evaluation, and prediction commands are in [TFIDF_LOGISTIC_BASELINE.md](TFIDF_LOGISTIC_BASELINE.md).
+
+The standalone classifier files are `train_tfidf_baseline.py` and `predict_tfidf_baseline.py`. The human-written `eval_set/real_test.jsonl` is only read when `--real-eval` is explicitly provided and should be kept out of training and tuning.
+
 ## Seven labels
 
 | ID | Meaning |
