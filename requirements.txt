@@ -1,2 +1,4 @@
 openai>=1.40,<3.0  # only needed for real LLM generation (OpenRouter / NVIDIA NIM)
 tqdm>=4.66         # optional progress bars
+scikit-learn>=1.5,<2.0
+joblib>=1.4,<2.0
