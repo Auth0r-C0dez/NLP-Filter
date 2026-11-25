@@ -214,5 +214,6 @@ Passing these tests shows that pipeline rules behave as expected. It does not sh
 - The basic LLM-negative checks do not prove every generated sentence is truly unrelated. Review those rows.
 - Synthetic validation/test scores can be optimistic because the data is artificial. Use the separate human-written test set for the meaningful final score.
 - Group-preserving splits may differ from exact requested percentages.
-- The downstream classifier training code is a later step. Feed it only `text` and `label`.
+- The first TF-IDF + Logistic Regression training and prediction path is documented in `TFIDF_LOGISTIC_BASELINE.md`. Feed the classifier only `text` and `label`.
+- DeBERTa-v3 fine-tuning is a later step and is not implemented by this repository yet.
 - The bedroom vocabulary and class-6 boundary are user decisions. Changing them later means rebuilding and rechecking the data.
